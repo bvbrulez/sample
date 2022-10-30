@@ -3,6 +3,8 @@ frontend:
   phases:
     preBuild:
       commands:
+        - rm -rf /node_modules
+        - rm -rf /build
         - npm ci
     build:
       commands:
@@ -10,8 +12,7 @@ frontend:
   artifacts:
     baseDirectory: build
     files:
-      - '**/*'
+      - "**/*"
   cache:
     paths:
       - node_modules/**/*
-
