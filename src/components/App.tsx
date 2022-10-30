@@ -6,9 +6,11 @@ import Login from './login/Login';
 function App() {
   const [token, setToken] = useState();
 
+  /*
   if (!token) {
     return <Login />;
   }
+  */
 
   return (
     <div>
